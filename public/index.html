@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tap Tap Game</title>
+</head>
+<body>
+    <div id="username-form">
+        <input type="text" id="username" placeholder="Enter your username" required>
+        <button onclick="setUsername()">Start Game</button>
+        <div id="error-message" style="color: red;"></div>
+    </div>
+    <div id="game" style="display:none;">
+        <div id="circle" onclick="tapCircle()">
+            <img src="assets/image.png" alt="Tap Image">
+            <div id="score">0</div>
+        </div>
+        <div id="leaderboard"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
